@@ -43,23 +43,23 @@ export function Serie() {
 				</Style.SerieButton>
 			</Style.SerieDivButton>
 			<Style.SerieDiv>
-				{serie.map((el, index) => (
+				{serie.map((item, index) => (
 					<Style.SerieBody key={index}>
-						<h4>{el.title}</h4>
-						<Style.SerieImg src={el.image} alt="img" />
-						<p>{el.description}</p>
-						<p>{el.rating}</p>
+						<h4>{item.title}</h4>
+						<Style.SerieImg src={item.image} alt="img" />
+						<p>{item.description}</p>
+						<p>{item.rating}</p>
 						<Style.SerieDivMenu>
 							<Style.SerieButtonMenu
 								onClick={() => {
-									navigate(Path.FORM_SERIE_UPDATE + el.id);
+									navigate(Path.FORM_SERIE_UPDATE + item.id);
 								}}
 							>
 								Refresh
 							</Style.SerieButtonMenu>
 							<Style.SerieButtonMenu
 								onClick={() => {
-									deleteCardSerie(el.id);
+									deleteCardSerie(item.id);
 								}}
 							>
 								Remove

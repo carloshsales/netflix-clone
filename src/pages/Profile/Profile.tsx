@@ -53,17 +53,17 @@ export function Profile() {
 				<Select options={options} selectOptions={setSelectValue} />
 				{selectValue === "Movies" && (
 					<>
-						{movie.map((el) => {
+						{movie.map((item) => {
 							return (
-								<Style.profileElement key={el.id}>
+								<Style.profileElement key={item.id}>
 									<Style.profileCard>
-										<h3>{el.title}</h3>
+										<h3>{item.title}</h3>
 										<Style.profileImg
-											src={el.image}
+											src={item.image}
 											alt="img"
 										/>
-										<p>{el.description}</p>
-										<p>{el.rating}</p>
+										<p>{item.description}</p>
+										<p>{item.rating}</p>
 									</Style.profileCard>
 								</Style.profileElement>
 							);
@@ -72,17 +72,17 @@ export function Profile() {
 				)}
 				{selectValue === "Series" && (
 					<>
-						{serie.map((el) => {
+						{serie.map((item) => {
 							return (
-								<Style.profileElement key={el.id}>
+								<Style.profileElement key={item.id}>
 									<Style.profileCard>
-										<h3>{el.title}</h3>
+										<h3>{item.title}</h3>
 										<Style.profileImg
-											src={el.image}
+											src={item.image}
 											alt="img"
 										/>
-										<p>{el.description}</p>
-										<p>{el.rating}</p>
+										<p>{item.description}</p>
+										<p>{item.rating}</p>
 									</Style.profileCard>
 								</Style.profileElement>
 							);
@@ -91,17 +91,17 @@ export function Profile() {
 				)}
 				{selectValue === "Animes" && (
 					<>
-						{anime.map((el) => {
+						{anime.map((item) => {
 							return (
-								<Style.profileElement key={el.id}>
+								<Style.profileElement key={item.id}>
 									<Style.profileCard>
-										<h3>{el.title}</h3>
+										<h3>{item.title}</h3>
 										<Style.profileImg
-											src={el.image}
+											src={item.image}
 											alt="img"
 										/>
-										<p>{el.description}</p>
-										<p>{el.rating}</p>
+										<p>{item.description}</p>
+										<p>{item.rating}</p>
 									</Style.profileCard>
 								</Style.profileElement>
 							);

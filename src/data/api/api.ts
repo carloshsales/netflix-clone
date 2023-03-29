@@ -8,7 +8,7 @@ import {
 	UserRequest,
 } from "../types/types";
 
-axios.defaults.baseURL = "https://movies-backend-production.up.railway.app";
+axios.defaults.baseURL = "https://movies-backend-ne6z.onrender.com/";
 axios.defaults.headers.post["content-type"] = "application/json";
 
 axios.interceptors.request.use(

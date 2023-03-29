@@ -47,11 +47,11 @@ export function Home() {
 					<Style.whapperHomeMovie>
 						<Style.arrowMovie src={arrow} alt="arrow" />
 						<Style.carousel>
-							{stateMovie.map((el) => {
-								console.log(el);
+							{stateMovie.map((item) => {
+								console.log(item);
 								return (
 									<Style.carouselItem
-										src={el.image}
+										src={item.image}
 										alt="img"
 									/>
 								);
@@ -65,8 +65,11 @@ export function Home() {
 					<Style.whapperHomeMovie>
 						<Style.arrowLeghtSerie src={arrow} alt="arrow" />
 						<Style.carousel>
-							{stateSerie.map((el) => (
-								<Style.carouselItem src={el.image} alt="img" />
+							{stateSerie.map((item) => (
+								<Style.carouselItem
+									src={item.image}
+									alt="img"
+								/>
 							))}
 						</Style.carousel>
 						<Style.arrowRightSerie src={arrow} alt="arrow" />
@@ -77,8 +80,11 @@ export function Home() {
 					<Style.whapperHomeMovie>
 						<Style.arrowLeghtAnime src={arrow} alt="arrow" />
 						<Style.carousel>
-							{stateAnime.map((el) => (
-								<Style.carouselItem src={el.image} alt="img" />
+							{stateAnime.map((item) => (
+								<Style.carouselItem
+									src={item.image}
+									alt="img"
+								/>
 							))}
 						</Style.carousel>
 						<Style.arrowRightAnime src={arrow} alt="arrow" />

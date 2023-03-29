@@ -43,23 +43,23 @@ export function Anime() {
 				</Style.animeButton>
 			</Style.animeDivButton>
 			<Style.animeBody>
-				{anime.map((el, index) => (
+				{anime.map((item, index) => (
 					<Style.animeCard key={index}>
-						<h4>{el.title}</h4>
-						<Style.animeImage src={el.image} alt="img" />
-						<p>{el.description}</p>
-						<p>{el.rating}</p>
+						<h4>{item.title}</h4>
+						<Style.animeImage src={item.image} alt="img" />
+						<p>{item.description}</p>
+						<p>{item.rating}</p>
 						<Style.AnimeDivMenu>
 							<Style.AnimeButtonMenu
 								onClick={() => {
-									navigate(Path.FORM_ANIME_UPDATE + el.id);
+									navigate(Path.FORM_ANIME_UPDATE + item.id);
 								}}
 							>
 								Refresh
 							</Style.AnimeButtonMenu>
 							<Style.AnimeButtonMenu
 								onClick={() => {
-									deleteCardAnime(el.id);
+									deleteCardAnime(item.id);
 								}}
 							>
 								Remove

@@ -43,23 +43,23 @@ export function Movie() {
 				</Style.movieButton>
 			</Style.movieDivButton>
 			<Style.movieBody>
-				{movie.map((el, index) => (
+				{movie.map((item, index) => (
 					<Style.movieCard key={index}>
-						<h4>{el.title}</h4>
-						<Style.movieImg src={el.image} alt="img" />
-						<p>{el.description}</p>
-						<p>{el.rating}</p>
+						<h4>{item.title}</h4>
+						<Style.movieImg src={item.image} alt="img" />
+						<p>{item.description}</p>
+						<p>{item.rating}</p>
 						<Style.MovieDivMenu>
 							<Style.MovieButtonMenu
 								onClick={() => {
-									navigate(Path.FORM_MOVIE_UPDATE + el.id);
+									navigate(Path.FORM_MOVIE_UPDATE + item.id);
 								}}
 							>
 								Refresh
 							</Style.MovieButtonMenu>
 							<Style.MovieButtonMenu
 								onClick={() => {
-									deleteMovie(el.id);
+									deleteMovie(item.id);
 								}}
 							>
 								Remove
