@@ -13,8 +13,6 @@ import { Profile } from "./pages/Profile/Profile";
 import { Serie } from "./pages/Series/Serie";
 import { Path } from "./types/routes";
 
-/* import { FormMovieUpdate } from "./components/form/FormMovieUpdate"; */
-
 export function Router() {
 	return (
 		<Routes>

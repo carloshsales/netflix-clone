@@ -46,7 +46,7 @@ export function Anime() {
 				{anime.map((el, index) => (
 					<Style.animeCard key={index}>
 						<h4>{el.title}</h4>
-						<Style.animeImg src={el.image} alt="img" />
+						<Style.animeImage src={el.image} alt="img" />
 						<p>{el.description}</p>
 						<p>{el.rating}</p>
 						<Style.AnimeDivMenu>

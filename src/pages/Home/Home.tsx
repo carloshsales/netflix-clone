@@ -2,7 +2,7 @@ import * as Style from "./style";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { Path } from "../../types/routes";
-import chevron from "../../assets/images/chevron.png";
+import arrow from "../../assets/images/arrow.png";
 
 type teste = {
 	image: string;
@@ -45,7 +45,7 @@ export function Home() {
 				<h3>Movies</h3>
 				<Style.carouselHomeMovie>
 					<Style.whapperHomeMovie>
-						<Style.chevronLeghtMovie src={chevron} alt="chevron" />
+						<Style.arrowMovie src={arrow} alt="arrow" />
 						<Style.carousel>
 							{stateMovie.map((el) => {
 								console.log(el);
@@ -57,31 +57,31 @@ export function Home() {
 								);
 							})}
 						</Style.carousel>
-						<Style.chevronRightMovie src={chevron} alt="chevron" />
+						<Style.arrowRightMovie src={arrow} alt="arrow" />
 					</Style.whapperHomeMovie>
 				</Style.carouselHomeMovie>
 				<h3>Series</h3>
 				<Style.carouselHomeMovie>
 					<Style.whapperHomeMovie>
-						<Style.chevronLeghtSerie src={chevron} alt="chevron" />
+						<Style.arrowLeghtSerie src={arrow} alt="arrow" />
 						<Style.carousel>
 							{stateSerie.map((el) => (
 								<Style.carouselItem src={el.image} alt="img" />
 							))}
 						</Style.carousel>
-						<Style.chevronRightSerie src={chevron} alt="chevron" />
+						<Style.arrowRightSerie src={arrow} alt="arrow" />
 					</Style.whapperHomeMovie>
 				</Style.carouselHomeMovie>
 				<h3>Animes</h3>
 				<Style.carouselHomeMovie>
 					<Style.whapperHomeMovie>
-						<Style.chevronLeghtAnime src={chevron} alt="chevron" />
+						<Style.arrowLeghtAnime src={arrow} alt="arrow" />
 						<Style.carousel>
 							{stateAnime.map((el) => (
 								<Style.carouselItem src={el.image} alt="img" />
 							))}
 						</Style.carousel>
-						<Style.chevronRightAnime src={chevron} alt="chevron" />
+						<Style.arrowRightAnime src={arrow} alt="arrow" />
 					</Style.whapperHomeMovie>
 				</Style.carouselHomeMovie>
 			</Style.PageHome>

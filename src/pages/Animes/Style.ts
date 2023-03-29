@@ -38,7 +38,7 @@ export const animeCard = styled.div`
 	`}
 `;
 
-export const animeImg = styled.img`
+export const animeImage = styled.img`
 	width: 100%;
 	height: 70%;
 `;

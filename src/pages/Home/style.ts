@@ -35,7 +35,7 @@ export const whapperHomeMovie = styled.div`
 	overflow: hidden;
 `;
 
-export const chevronRightMovie = styled.img`
+export const arrowRightMovie = styled.img`
 	${({ theme }) => css`
   top: 15%;
   height: 46px;
@@ -53,7 +53,7 @@ export const chevronRightMovie = styled.img`
 `}
 `;
 
-export const chevronLeghtMovie = styled.img`
+export const arrowMovie = styled.img`
 	${({ theme }) => css`
   top: 15%;
   height: 46px;
@@ -85,7 +85,7 @@ export const carouselItem = styled.img`
 	margin-left: 0px;
 `;
 
-export const chevronRightSerie = styled.img`
+export const arrowRightSerie = styled.img`
 	${({ theme }) => css`
   top: 40%;
   height: 46px;
@@ -103,7 +103,7 @@ export const chevronRightSerie = styled.img`
 `}
 `;
 
-export const chevronLeghtSerie = styled.img`
+export const arrowLeghtSerie = styled.img`
 	${({ theme }) => css`
   top: 40%;
   height: 46px;
@@ -121,7 +121,7 @@ export const chevronLeghtSerie = styled.img`
 `}
 `;
 
-export const chevronRightAnime = styled.img`
+export const arrowRightAnime = styled.img`
 	${({ theme }) => css`
   top: 70%;
   height: 46px;
@@ -139,7 +139,7 @@ export const chevronRightAnime = styled.img`
 `}
 `;
 
-export const chevronLeghtAnime = styled.img`
+export const arrowLeghtAnime = styled.img`
 	${({ theme }) => css`
   top: 70%;
   height: 46px;
