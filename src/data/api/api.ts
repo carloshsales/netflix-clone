@@ -30,7 +30,7 @@ axios.interceptors.response.use(
 		return config;
 	},
 	function (error) {
-		if (error.response.statusCode === 401) {
+		if (error.response.statusCode == 401) {
 			if (localStorage.getItem("token")) localStorage.removeItem("token");
 		}
 	}
